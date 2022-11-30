@@ -8,7 +8,7 @@ class NGER{
       int ans[]=new int[arr.length];
       
       for(int i=arr.length-1;i>=0;i--){
-          while(!Stack.isEmpty() && stack.peek()<=arr[i]){
+          while(!stack.isEmpty() && stack.peek()<=arr[i]){
           stack.pop();
           }
           if(stack.isEmpty()){
@@ -27,4 +27,4 @@ class NGER{
     for(int a : ans){
     system.out.print(a+" ");
     }
-   }
+ }
